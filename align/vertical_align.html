@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+      }
+      .base {
+        background-color: limegreen;
+        font-size: 1.2em;
+      }
+      .vertical {
+        background-color: orange;
+        font-size: 0.6em;
+        /* vertical-align: auto;변화 없음 기본 */
+        /* vertical-align: middle; */
+        /* vertical-align: text-top; */
+        vertical-align: top; /* 인라인 속성에 배치를 한다 이미지 들어올때 쓰인다 */
+      }
+      div {
+        border: 1px solid red;
+      }
+      img {
+        vertical-align: top;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      <sapn class="base">Lorem ipsum dolor</sapn>
+      <span class="vertical">Lorem</span>
+    </h1>
+    <div><img src="../img/hadoop.jpg" alt="하둡" /></div>
+  </body>
+</html>

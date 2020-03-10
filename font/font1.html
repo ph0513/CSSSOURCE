@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      p {
+        font-style: italic; /* 기울임 꼴 */
+        font-weight: bold; /* 글자의 두께(100~900,bold,normal(400)) */
+        font-size: 40px; /* 글자의 크기 */
+      }
+      div {
+        font-size: 30px;
+        /* line-height: 32px; 32px 에 30px 를 제외한 2px 를 위아래로 나눠 가져간다 px,em,...,숫자  */
+        line-height: 1.5; /* 자동으로 바꿔줌 */
+        font-family: Arial, Helvetica, "Open Sans", "돋움" sans-serif; /* Arial, Helvetica, 글꼴 sans-serif; 글꼴계열 */
+      }
+      .serif {
+        font-family: serif;
+      }
+      .sans-serif {
+        font-family: sans-serif;
+      }
+      .monospace {
+        font-family: monospace;
+      }
+      .cursive {
+        font-family: cursive;
+      }
+      .total {
+        /* 단축속성으로 font 속성값을 부여하는 것이 가능
+          단, font-size, font-family 속성은 무조건 부여해야함
+           */
+        font: italic bold 20px / 1.5 Arial, sans-serif;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- font
+         font-style: 글자의 기울임꼴
+         font-weight: 글자의 두꼐(100~900,bold,normal(400))
+         font-size: 글자의 높이
+         line-height: 줄높이
+         font-family: 글꼴(글꼴명 나열,마지막에는 글꼴 계열 마지막 계열은 글꼴이 없다면 쓰임)
+         글꼴 계열 : sans-serif(고딕체) / serif(바탕체) / monospace(고정너비 글꼴) / cursive(필기체)
+    -->
+    <p>Hello!! World!!</p>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste nulla
+      veritatis qui cupiditate alias nesciunt corporis culpa vitae neque,
+      recusandae doloremque fuga aliquid nobis similique ratione blanditiis
+      aspernatur ipsum. Sint ipsam corrupti reprehenderit, quasi qui magnam
+      illum ea vero eum officiis aliquam harum quia illo quam exercitationem
+      totam hic eius mollitia quos quod dicta reiciendis pariatur. Modi rerum
+      accusamus, possimus minus hic mollitia est commodi amet suscipit
+      cupiditate illum deserunt nam eligendi nesciunt dignissimos ullam quos qui
+      beatae quaerat. Sint maxime maiores ipsam tenetur officia dolore repellat,
+      consectetur error vero ullam perferendis alias cum, doloremque impedit qui
+      possimus quibusdam.
+    </div>
+    <p class="serif">Hello World</p>
+    <p class="sans-serif">Hello World</p>
+    <p class="monospace">Hello World</p>
+    <p class="cursive">Hello World</p>
+    <p class="total">Hello World</p>
+  </body>
+</html>

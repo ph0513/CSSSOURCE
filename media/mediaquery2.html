@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem; /*  */
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      .flexbg .left {
+        background: #3498db;
+        padding: 25px;
+        order: 1;
+      }
+      .flexbg .right {
+        background: #34495e;
+        padding: 25px;
+        order: 3;
+      }
+
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          /* 바뀌는 부분만 정의  */
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          /* 바뀌는 부분만 정의  */
+          width: 50%;
+        }
+        .flexbg .left {
+          /* 바뀌는 부분만 정의  */
+          order: 2;
+        }
+
+        @media screen and (max-width: 480px) {
+          .flexbg .sidebar {
+            width: 100%;
+          }
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          fugiat deleniti tempora exercitationem natus? Delectus dolor tenetur
+          dolorem ad porro numquam molestiae iure, eveniet exercitationem,
+          provident reiciendis, iusto architecto inventore consequuntur expedita
+          saepe. Illo repellendus, officiis voluptates ad doloremque minus ut
+          nesciunt libero voluptatibus sint, eum obcaecati laudantium minima qui
+          provident veritatis aperiam reprehenderit aliquid quia saepe possimus
+          porro pariatur error similique? Labore sunt sit aperiam, nostrum
+          debitis a commodi suscipit provident accusamus. Odio deserunt aliquam
+          asperiores odit voluptatem alias officia praesentium omnis sit? Eum
+          aliquam earum explicabo, tenetur rerum soluta ipsum. Illum minima
+          odit, mollitia esse et blanditiis soluta.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          fugiat deleniti tempora exercitationem natus? Delectus dolor tenetur
+          dolorem ad porro numquam molestiae iure, eveniet exercitationem,
+          provident reiciendis, iusto architecto inventore consequuntur expedita
+          saepe. Illo repellendus, officiis voluptates ad doloremque minus ut
+          nesciunt libero voluptatibus sint, eum obcaecati laudantium minima qui
+          provident veritatis aperiam reprehenderit aliquid quia saepe possimus
+          porro pariatur error similique? Labore sunt sit aperiam, nostrum
+          debitis a commodi suscipit provident accusamus. Odio deserunt aliquam
+          asperiores odit voluptatem alias officia praesentium omnis sit? Eum
+          aliquam earum explicabo, tenetur rerum soluta ipsum. Illum minima
+          odit, mollitia esse et blanditiis soluta.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, ad ut
+      </aside>
+      <aside class="sidebar right">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, ad ut
+      </aside>
+    </div>
+  </body>
+</html>

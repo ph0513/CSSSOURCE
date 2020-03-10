@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      /* 스타일 우선수위
+            1 명시도 점수가 높을 수록 우선순위가 높음
+            (!important > 인라인 > 아이디 > 클래스 > 태그 > 전체 > 상속)
+         */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 960px;
+        background: #ccc;
+        margin: auto; /* 가운데 정렬 */
+      }
+      .logo {
+        float: left;
+      }
+      .nav {
+        float: right;
+      }
+      .nav ul {
+        list-style: none;
+      }
+      .nav ul li {
+        display: inline-block;
+        /* display: inline; */
+        margin-left: 20px;
+        line-height: 60px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="logo">
+        <h1><a href="#">Logo</a></h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Member Join</a></li>
+          <li><a href="#">Site map</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>

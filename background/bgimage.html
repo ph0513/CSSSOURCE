@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .box1 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid;
+        background-image: url("../img/bg.png");
+        background-repeat: no-repeat; /* repeat; (기본값) no-repeat,repeat-x,repeat-y */
+        background-position: center; /* right top; top right; 둘 다 가능 수평 먼저 주고 수직을 주는게 원칙 */
+      } /* 반복되는것은 하나만 줘도 된다 수평 : left center right 수직 : top,center,bottom */
+      .box2 {
+        /* 그림과 픽셀 크기 맞춰야 한다 */
+        /* width: 495px;
+        height: 498px; */
+        width: 300px;
+        height: 300px;
+        background-image: url(https://www.w3.org/html/logo/img/html5-display.png);
+        background-size: contain; /* 가로(px)를 정하면  세로는 자동으로 맞춰줌 contain,100%*/
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- background-image : 요소의 배경에 이미지를 삽입 
+        기본값 : 이미지없음
+        url("경로")
+        background-repeat: repeat; (기본값)
+    -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
